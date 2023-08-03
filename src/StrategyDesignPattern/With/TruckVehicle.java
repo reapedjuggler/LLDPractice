@@ -1,5 +1,9 @@
 package StrategyDesignPattern.With;
 
-public class TruckVehicle{
-    s
+import StrategyDesignPattern.With.Strategy.GoodsVehicleStrategy;
+
+public class TruckVehicle extends Vehicle{
+    TruckVehicle () {
+        super(new GoodsVehicleStrategy());
+    }
 }
