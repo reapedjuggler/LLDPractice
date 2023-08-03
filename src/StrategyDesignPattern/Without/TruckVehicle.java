@@ -1,6 +1,6 @@
 package StrategyDesignPattern.Without;
 
-public class GoodsVehicle extends Vehicle {
+public class TruckVehicle extends Vehicle {
     @Override
     public void drive () {
         System.out.println("Goods Vehicle stratergy");
