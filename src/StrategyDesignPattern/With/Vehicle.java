@@ -1,17 +1,17 @@
 package StrategyDesignPattern.With;
 
 import StrategyDesignPattern.With.Strategy.DriveStrategy;
-import StrategyDesignPattern.With.Strategy.GoodsVehicleStrategy;
 
-public class Vehicle {
+public class Vehicle{
     DriveStrategy driveStrategy;
-    Vehicle () {
-        throw new NullPointerException("Drive Strategy can not be null");
+    public Vehicle () {
+        throw new NullPointerException("Can not drive without a drive strategy");
     }
-    Vehicle (DriveStrategy driveStrategy) {
-        this.driveStrategy = driveStrategy;
+    public Vehicle(DriveStrategy cstDriveStrategy) {
+        driveStrategy = cstDriveStrategy;
     }
-    public void drive (){
+    public void drive () {
         driveStrategy.drive();
     }
+
 }
