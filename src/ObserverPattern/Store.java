@@ -20,10 +20,6 @@ public class Store {
         iphoneObservable.add(observer1);
         iphoneObservable.add(observer2);
 
-//        macBookObservable.add(observer);
-//        macBookObservable.add(observer1);
-
         iphoneObservable.setData(12);
-//        macbook.setData(10);
     }
 }

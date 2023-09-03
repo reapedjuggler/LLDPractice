@@ -5,21 +5,21 @@ import ObserverPattern.Observer.UserNotificationsAlertObserver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IphoneObservableImpl implements StocksObservable{
+public class MacBookObservableImpl implements StocksObservable{
     List<UserNotificationsAlertObserver> observerList = new ArrayList<>();
     int stockCount = 0;
     String stockName;
-    public IphoneObservableImpl (String stockName) {
-                                                 this.stockName = stockName;
-                                                                            }
+    public MacBookObservableImpl (String stockName) {
+        this.stockName = stockName;
+    }
     @Override
     public void add(UserNotificationsAlertObserver observer) {
-                                                                   observerList.add(observer);
-                                                                                              }
+        observerList.add(observer);
+    }
     @Override
     public void remove(UserNotificationsAlertObserver observer) {
-                                                              observerList.remove(observer);
-                                                                                            }
+        observerList.remove(observer);
+    }
     @Override
     public void setData(int amount) {
         if (stockCount == 0) {
@@ -35,10 +35,10 @@ public class IphoneObservableImpl implements StocksObservable{
     }
     @Override
     public int getStockCount() {
-                             return stockCount;
-                                               }
+        return stockCount;
+    }
     @Override
     public String getStockName() {
-                               return stockName;
-                                                }
+        return stockName;
+    }
 }
