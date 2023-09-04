@@ -15,5 +15,10 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.jvnet.sorcerer</groupId>
+      <artifactId>sorcerer-javac</artifactId>
+      <version>0.8</version>
+    </dependency>
   </dependencies>
 </project>
